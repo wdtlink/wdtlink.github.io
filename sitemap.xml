@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<urlset xmlns="http://www.google.com/schemas/sitemap/0.84" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+		<url>
+			<loc>https://wdtlink.github.io/</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://wdtlink.github.io/index.html</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://wdtlink.github.io/about.html</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://wdtlink.github.io/css.html</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://wdtlink.github.io/icon.html</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://wdtlink.github.io/color.html</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://wdtlink.github.io/image.html</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://wdtlink.github.io/graphic.html</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://wdtlink.github.io/video.html</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://wdtlink.github.io/design.html</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://wdtlink.github.io/template.html</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://wdtlink.github.io/security.html</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://wdtlink.github.io/site-tool.html</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://wdtlink.github.io/sitemap.html</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+	</urlset>
+
