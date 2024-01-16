@@ -4,42 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Single Page Personal Cv, Portfolio Theme" />
-  <meta name="keywords" content="HTML5, CSS, JavaScript" />
-  <meta name="robots" content="noindex" />
-  <meta name="AdsBot-Google" content="noindex" />
-  <meta name="robots" content="noarchive" />
-  <!-- Fav Icon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="assets/img/favicon/site.webmanifest">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="web design tools">
+  <meta name="keywords" content="web design,html5,css,jquery,icon,color,validator">
+  <meta name="google-site-verification" content="OYznjEHJmyb2XJD38gpUJEAnHWhUuO2sly6PIjWNwQw">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
   <!-- ### Bootstrap CSS ### -->
-  <link rel="stylesheet" type="text/css" href="assets/css/vendor/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/vendor/bootstrap.min.css">
   <!-- ### Fontawesome CSS ### -->
-  <link rel="stylesheet" type="text/css" href="assets/css/vendor/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/vendor/all.min.css">
   <!-- ### Google Fonts ### -->
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-   <!-- ### Main CSS ### -->
-  <link rel="stylesheet" type="text/css" href="assets/css/style.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Open+Sans:wght@300;400&display=swap"
+    rel="stylesheet"> <!-- ### Main CSS ### -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
   <title>WDT | Public API</title>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-R05V43SD6Y"></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag() { dataLayer.push(arguments); }
+     gtag('js', new Date());
+      gtag('config', 'G-R05V43SD6Y');
+   </script>
 </head>
 <body>
 
-<!--##### Navigation Start #####-->
-<nav class="navbar navbar-expand-md fixed-top">
-  <div class="container">
+ <!--##### Navigation Start #####-->
+ <nav class="navbar navbar-expand-md fixed-top">
+  <div class="container-fluid">
     <a class="navbar-brand" href="index.html">
       <img src="assets/img/wdt_logo.png" alt="wdt logo">
     </a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-list"></i></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
@@ -50,7 +49,7 @@
         <li class="nav-item">
           <a class="nav-link" href="contribute.html">Katkıda Bulunanlar<i class="fas fa-user-edit"></i></a>
         </li>
-     </ul>
+      </ul>
     </div>
   </div>
 </nav>
@@ -73,36 +72,11 @@
 </header>
 <!--##### //Header End #####-->
 
-<section class="content">
- <div class="container">
-   <div class="row">
-    <div class="col-md-4">
-      <div class="box">
-        <h5>
-          <a href="https://www.ipify.org/" class="a-link" target="_blank" rel="noopener">
-            <i class="fas fa-terminal"></i>ipify API<br><span class="tool-text">A Simple Public IP Address API</span></a>
-        </h5>
-    </div>
-    </div>
-    <div class="col-md-4">
-      <div class="box">
-        <h5>
-          <a href="https://geo.ipify.org/" class="a-link" target="_blank" rel="noopener">
-            <i class="fas fa-terminal"></i>IP Geolocation API<br><span class="tool-text">Geolocation API</span></a>
-        </h5>
-    </div>
-    </div>
-    <div class="col-md-4">
-      <div class="box">
-        <h5>
-          <a href="https://restcountries.eu/" class="a-link" target="_blank" rel="noopener">
-            <i class="fas fa-terminal"></i>REST Countries<br><span class="tool-text">Provides country info </span></a>
-        </h5>
-    </div>
-    </div>
-    </div>
- </div>
-</section>
+
+  <div class="container content">
+    <div class="row public-api"></div>
+  </div>
+
 
 </main>
 <!--##### //Main End #####-->
@@ -131,6 +105,7 @@
   <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
   <!-- Main Js -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/category.js" type="module"></script>
 
 </body>
 

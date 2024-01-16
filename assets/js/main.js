@@ -1,10 +1,3 @@
-/** Navbar Menu **/
-$(function() {
-  var navMain = $("#navbarResponsive");
-  navMain.on("click", "a", null, function() {
-    navMain.collapse('hide');
-  });
-});
 
 /** Back Top Icon **/
 var btn = $('.top');
