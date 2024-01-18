@@ -47,7 +47,7 @@ const publicApiDOM = document.querySelector(".public-api");
 window.addEventListener("DOMContentLoaded", function () {
 if(window.location.pathname === '/' || '/index.html'){
   indexPage(categoryName)
- }else{window.location.pathname === '/index.html'}
+ }else{(window.location.pathname === '/index.html')}
 
 
  if(window.location.pathname === '/sitemap.html'){
