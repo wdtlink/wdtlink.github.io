@@ -45,7 +45,7 @@ const publicApiDOM = document.querySelector(".public-api");
 
 
 window.addEventListener("DOMContentLoaded", function () {
-if(window.location.pathname === '/'){
+if(window.location.pathname === '/' && '/index.html'){
   indexPage(categoryName)
  }else{false}
 
