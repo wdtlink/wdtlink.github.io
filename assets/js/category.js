@@ -45,10 +45,6 @@ const publicApiDOM = document.querySelector(".public-api");
 
 
 window.addEventListener("DOMContentLoaded", function () {
-if(window.location.pathname === '/' || '/index.html'){
-  indexPage(categoryName)
- }else {false}
-
 
  if(window.location.pathname === '/sitemap.html'){
     sitemapPage(sitemap)
@@ -121,7 +117,13 @@ if(window.location.pathname === '/' || '/index.html'){
 
   if (window.location.pathname === "/public-api.html") {
     publicApi(publicApiList);
-  }
+  }else{false};
+
+   if(window.location.pathname === '/' ){
+    indexPage(categoryName);
+   }else if(window.location.pathname === '/index.html'){
+    indexPage(categoryName);
+   }else{false};
 });
 
  const indexPage = (items) => {
