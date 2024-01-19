@@ -66,7 +66,7 @@ export const siteToolList =[
     {
         id: 9,
         category: "Site Tool",
-        title: "Online Convery",
+        title: "Online Convert",
         desc: "",
         link: "https://www.online-convert.com/",
     
