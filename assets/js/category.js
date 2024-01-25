@@ -15,14 +15,12 @@ import { templateList } from "./template.js";
 import { securityList } from "./security.js";
 import { siteToolList } from "./site-tool-list.js";
 import { publicApiList } from "./public-api-list.js";
+import { categoryList } from "./category-list.js";
+import { contribute } from "./contribute.js";
 
-import { categoryName } from "./category-name.js";
-
-
-
-const categoryNameDOM = document.querySelector(".category-name")
-
-const sitemapDOM = document.querySelector(".sitemap")
+const contributeDOM = document.querySelector(".contribute");
+const categoryListDOM = document.querySelector(".category-name");
+const sitemapDOM = document.querySelector(".sitemap");
 
 const cssFrameworkDOM = document.querySelector(".css-framework");
 const cssAnimationDOM = document.querySelector(".css-animation");
@@ -41,14 +39,16 @@ const securityDOM = document.querySelector(".security");
 const siteToolDOM = document.querySelector(".site-tool");
 const publicApiDOM = document.querySelector(".public-api");
 
-
-
-
 window.addEventListener("DOMContentLoaded", function () {
+  if (window.location.pathname === "/contribute.html") {
+    contributeList(contribute);
+  }
 
- if(window.location.pathname === '/sitemap.html'){
-    sitemapPage(sitemap)
- } else{false}
+  if (window.location.pathname === "/sitemap.html") {
+    sitemapPage(sitemap);
+  } else {
+    false;
+  }
 
   if (window.location.pathname === "/css.html") {
     cssFramework(cssFrameworkList);
@@ -117,16 +117,33 @@ window.addEventListener("DOMContentLoaded", function () {
 
   if (window.location.pathname === "/public-api.html") {
     publicApi(publicApiList);
-  }else{false};
+  } else {
+    false;
+  }
 
-   if(window.location.pathname === '/' ){
-    indexPage(categoryName);
-   }else if(window.location.pathname === '/index.html'){
-    indexPage(categoryName);
-   }else{false};
+  if (window.location.pathname === "/") {
+    indexPage(categoryList);
+  } else if (window.location.pathname === "/index.html") {
+    indexPage(categoryList);
+  } else {
+    false;
+  }
 });
 
- const indexPage = (items) => {
+const contributeList = (items) => {
+  let contributeNameView = items.map((item) => {
+    return `
+    <div class="col-md-2 col-sm-3">
+    <a href="${item.socialLink}" class="a-link" target="_blank" rel="noopener">${item.name} 
+    <image src="${item.socialIcon}" class="social-icon"></a>
+   </div>
+    `;
+  });
+  contributeNameView = contributeNameView.join("");
+  contributeDOM.innerHTML = contributeNameView;
+};
+
+const indexPage = (items) => {
   let categoryNameView = items.map((item) => {
     return `
     <div class="col-lg-3 col-sm-6">
@@ -143,8 +160,8 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
   categoryNameView = categoryNameView.join("");
-  categoryNameDOM.innerHTML = categoryNameView;
-}
+  categoryListDOM.innerHTML = categoryNameView;
+};
 
 const sitemapPage = (items) => {
   let sitemapView = items.map((item) => {
@@ -152,7 +169,7 @@ const sitemapPage = (items) => {
       <div class="col-md-2 col-sm-3">
       <div class="box">
        <a href="${item.link}" class="a-link">
-        <i class="fas fa-sitemap"></i>${item.title}</a>
+       <i class="fas fa-file-alt"></i>${item.title}</a>
       </div>
     </div>
       `;
@@ -160,7 +177,7 @@ const sitemapPage = (items) => {
 
   sitemapView = sitemapView.join("");
   sitemapDOM.innerHTML = sitemapView;
-}
+};
 
 const cssFramework = (items) => {
   let cssFrameworkView = items.map((item) => {
@@ -176,7 +193,7 @@ const cssFramework = (items) => {
 
   cssFrameworkView = cssFrameworkView.join("");
   cssFrameworkDOM.innerHTML = cssFrameworkView;
-}
+};
 
 const cssAnimation = (items) => {
   let cssAnimationView = items.map((item) => {
@@ -192,7 +209,7 @@ const cssAnimation = (items) => {
 
   cssAnimationView = cssAnimationView.join("");
   cssAnimationDOM.innerHTML = cssAnimationView;
-}
+};
 
 const cssTool = (items) => {
   let cssToolView = items.map((item) => {
@@ -208,7 +225,7 @@ const cssTool = (items) => {
 
   cssToolView = cssToolView.join("");
   cssToolDOM.innerHTML = cssToolView;
-}
+};
 
 const icon = (items) => {
   let iconView = items.map((item) => {
@@ -224,9 +241,9 @@ const icon = (items) => {
 
   iconView = iconView.join("");
   iconDOM.innerHTML = iconView;
-}
+};
 
-const  fontIcon = (items) => {
+const fontIcon = (items) => {
   let fontIconView = items.map((item) => {
     return `
     <div class="col-md-2 col-sm-3">
@@ -240,7 +257,7 @@ const  fontIcon = (items) => {
 
   fontIconView = fontIconView.join("");
   fontIconDOM.innerHTML = fontIconView;
-}
+};
 
 const color = (items) => {
   let colorView = items.map((item) => {
@@ -256,7 +273,7 @@ const color = (items) => {
 
   colorView = colorView.join("");
   colorDOM.innerHTML = colorView;
-}
+};
 
 const colorTool = (items) => {
   let colorToolView = items.map((item) => {
@@ -272,7 +289,7 @@ const colorTool = (items) => {
 
   colorToolView = colorToolView.join("");
   colorToolDOM.innerHTML = colorToolView;
-}
+};
 
 const image = (items) => {
   let imageView = items.map((item) => {
@@ -288,7 +305,7 @@ const image = (items) => {
 
   imageView = imageView.join("");
   imageDOM.innerHTML = imageView;
-}
+};
 
 const imageTool = (items) => {
   let imageToolView = items.map((item) => {
@@ -304,7 +321,7 @@ const imageTool = (items) => {
 
   imageToolView = imageToolView.join("");
   imageToolDOM.innerHTML = imageToolView;
-}
+};
 
 const graphic = (items) => {
   let graphicView = items.map((item) => {
@@ -320,7 +337,7 @@ const graphic = (items) => {
 
   graphicView = graphicView.join("");
   graphicDOM.innerHTML = graphicView;
-}
+};
 
 const video = (items) => {
   let videoView = items.map((item) => {
@@ -335,7 +352,7 @@ const video = (items) => {
   });
   videoView = videoView.join("");
   videoDOM.innerHTML = videoView;
-}
+};
 
 const design = (items) => {
   let designView = items.map((item) => {
@@ -351,7 +368,7 @@ const design = (items) => {
 
   designView = designView.join("");
   designDOM.innerHTML = designView;
-}
+};
 
 const template = (items) => {
   let templateView = items.map((item) => {
@@ -367,7 +384,7 @@ const template = (items) => {
 
   templateView = templateView.join("");
   templateDOM.innerHTML = templateView;
-}
+};
 
 const security = (items) => {
   let securityView = items.map((item) => {
@@ -382,7 +399,7 @@ const security = (items) => {
   });
   securityView = securityView.join("");
   securityDOM.innerHTML = securityView;
-}
+};
 
 const siteTool = (items) => {
   let siteToolView = items.map((item) => {
@@ -398,7 +415,7 @@ const siteTool = (items) => {
 
   siteToolView = siteToolView.join("");
   siteToolDOM.innerHTML = siteToolView;
-}
+};
 
 const publicApi = (items) => {
   let publicApiView = items.map((item) => {
@@ -414,4 +431,4 @@ const publicApi = (items) => {
 
   publicApiView = publicApiView.join("");
   publicApiDOM.innerHTML = publicApiView;
-}
+};

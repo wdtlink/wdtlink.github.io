@@ -61,7 +61,7 @@ body {
   scroll-behavior: smooth
 }
 
-.content{
+.content {
   margin-bottom: 3rem;
 }
 
@@ -146,12 +146,12 @@ p {
   color: var(--primary-color)
 }
 
-.btn-outline-warning{
+.btn-outline-warning {
   color: var(--primary-color);
   border-color: var(--primary-color);
 }
 
-.btn-outline-warning:hover{
+.btn-outline-warning:hover {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
 }
@@ -190,7 +190,9 @@ p {
   --body-bgcolor: #1b1f25
 }
 
-/*!* Top icon **/
+/*!---------------------------
+  ### Top Icon ###
+-----------------------------*/
 .top {
   position: fixed;
   bottom: 4rem;
@@ -212,6 +214,10 @@ p {
   opacity: 1;
   visibility: visible
 }
+
+/*!---------------------------
+  ### Top Icon End ###
+-----------------------------*/
 
 /*!---------------------------
   ### Navigation ###
@@ -244,7 +250,13 @@ p {
   background: var(--primary-color)
 }
 
-/*! Footer */
+/*!---------------------------
+  ### Navigation  End ###
+-----------------------------*/
+
+/*!---------------------------
+  ### Footer ###
+-----------------------------*/
 footer {
   padding: .6rem;
   background-color: var(--layout-color)
@@ -254,28 +266,35 @@ footer .nav-link {
   color: var(--secondary-color)
 }
 
-footer .nav-link:hover{
+footer .nav-link:hover {
   color: var(--primary-color)
 }
 
+/*!---------------------------
+  ### Footer End ###
+-----------------------------*/
+
+/*!---------------------------
+  ### Header ###
+-----------------------------*/
 header {
   margin-top: 80px;
   text-align: center
 }
 
 header h1 {
-  margin: 1rem 0 1rem 0;
+  margin: .8rem 0 .8rem 0;
   color: var(--text-color)
 }
 
 header img {
-  width: 100px;
-  height: 100px
+  width: 80px;
+  height: 80px
 }
 
 .sub-title,
 .title {
-  margin: 1rem 0 1rem 0;
+  margin: .8rem 0 .8rem 0;
   text-align: center
 }
 
@@ -285,7 +304,7 @@ header img {
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: var(--secondary-color)
 }
 
@@ -294,12 +313,24 @@ header img {
   color: var(--text-color)
 }
 
-/*! Tool  Pages */
+/*!---------------------------
+  ### Header ###
+-----------------------------*/
+
+/*!---------------------------
+  ### Tool Page ###
+-----------------------------*/
 .box {
   padding: 1rem;
 }
 
-/*! index Page */
+/*!---------------------------
+  ### Tool Page End ###
+-----------------------------*/
+
+/*!---------------------------
+  ### Index Page ###
+-----------------------------*/
 .card {
   margin-top: .5rem;
   background-color: var(--body-bgcolor);
@@ -322,10 +353,16 @@ header img {
   color: var(--text-color)
 }
 
-/*! About Page */
+/*!---------------------------
+  ### Index Page End ###
+-----------------------------*/
 
-.about-content{
-  margin-bottom: 4rem;
+/*!---------------------------
+  ### About Page ###
+-----------------------------*/
+
+.about-content {
+  margin-bottom: 60px;
 }
 
 .about-content p {
@@ -344,8 +381,8 @@ header img {
 }
 
 .about-content .form {
-  margin: 1rem 0 1rem 0;
-  padding: 1rem;
+  margin: .8rem 0 .8rem 0;
+  padding: .8rem;
   text-align: center;
   border: 4px solid var(--layout-color);
   border-radius: 1rem
@@ -361,8 +398,13 @@ header img {
   background-color: var(--primary-color)
 }
 
+/*!---------------------------
+  ### About Page End ###
+-----------------------------*/
 
-/*! Contribute Page */
+/*!---------------------------
+  ### Contribute Page ###
+-----------------------------*/
 .contribute {
   text-align: center
 }
@@ -370,4 +412,26 @@ header img {
 .contribute a i {
   padding-left: .5rem;
   font-size: 1.2rem
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/*!---------------------------
+  ### Contribute Page End ###
+-----------------------------*/
+
+/*!---------------------------
+  ### Media ###
+-----------------------------*/
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
 }

@@ -68,5 +68,15 @@ export const sitemap = [
         id: 14,
         title: "katkıda bulunanlar",
         link: "/contribute.html"
+    },
+    {
+        id: 15,
+        title: "katkı formu",
+        link : "/contribute-form.html"
+    },
+    {
+        id: 16,
+        title: "İletişim",
+        link: "/contact.html"
     }
 ]
