@@ -46,5 +46,33 @@ export const cssAnimationList = [
         desc: "",
         link: "https://matejkustec.github.io/SpinThatShit/",
     
+    },
+    {
+        id: 7,
+        category: "CSS Animation",
+        title: "CSS matic",
+        desc: "",
+        link: "https://www.cssmatic.com/"
+    },
+    {
+        id: 8,
+        category: "CSS Animation",
+        title: "transition.css",
+        desc: "",
+        link: "https://www.transition.style/"
+    },
+    {
+        id: 9,
+        category: "CSS Animation",
+        title: "Whirl",
+        desc: "",
+        link : "https://whirl.netlify.app/"
+    },
+    {
+        id: 10,
+        category: "CSS Animation",
+        title: "Animate Backgrounds",
+        desc: "",
+        link: "https://animatedbackgrounds.me/"
     }
 ]
