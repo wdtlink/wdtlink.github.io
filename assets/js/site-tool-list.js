@@ -198,5 +198,29 @@ export const siteToolList =[
         desc: "",
         link: "https://newrelic.com/",
     
+    },
+    {
+        id: 26,
+        category: "Site Tool", 
+        title: "Favicon.ico",
+        desc: "",
+        link: "https://www.favicon-generator.org/"
+    
+    },
+    {
+        id: 27,
+        category: "Site Tool", 
+        title: "IPInfoDB",
+        desc: "",
+        link: "https://www.ipinfodb.com/"
+    
+    },
+    {
+        id: 28,
+        category: "Site Tool", 
+        title: "IpAddress.com",
+        desc: "",
+        link: "https://www.ipaddress.com/"
+    
     }
 ]
