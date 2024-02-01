@@ -30,5 +30,13 @@ export const templateList = [
         desc: "",
         link: "https://html5boilerplate.com/",
     
+    },
+    {
+        id: 5,
+        category: "Template", 
+        title: "Carrd",
+        desc: "",
+        link: "https://carrd.co/"
+    
     }
 ]
