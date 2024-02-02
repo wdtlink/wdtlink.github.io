@@ -198,5 +198,12 @@ export const iconList = [
         desc: "",
         link: "https://feathericons.com/",
     
+    },
+    {
+        id: 26,
+        category: "Icon",
+        title: "Reshot",
+        desc: "",
+        link: "https://www.reshot.com/"
     }
 ]
